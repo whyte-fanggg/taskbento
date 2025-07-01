@@ -39,7 +39,7 @@ const AddButton = styled.button`
 const Header: React.FC<HeaderProps> = ({ onAddClick }) => {
   return (
     <HeaderContainer>
-      <Logo>Taskbento</Logo>
+      <Logo>🗂️ Taskbento</Logo>
       <AddButton onClick={onAddClick}>+ Add Task</AddButton>
     </HeaderContainer>
   )
