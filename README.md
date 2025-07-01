@@ -1,69 +1,52 @@
-# React + TypeScript + Vite
+# Taskbento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Taskbento is a visual daily task manager inspired by bento meal layouts, featuring:
 
-Currently, two official plugins are available:
+- 🧩 Drag-and-drop claymorphic task tiles
+- 🌈 Pastel color palette for calming productivity
+- ✏️ Add, edit, delete tasks with real-time updates
+- ☁️ Firebase Firestore backend integration
+- 🎨 Built with React, Vite, TypeScript, Styled Components, Framer Motion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+[taskbento.vercel.app](https://taskbento.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React + TypeScript + Vite
+- Styled Components for claymorphism UI
+- Framer Motion for subtle animations
+- Firebase Firestore for cloud data
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📁 Folder Structure
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `src/components` – UI components
+- `src/styles` – Global and theme styles
+- `src/firebase.ts` – Firebase config
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💡 Future Enhancements
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- User authentication
+- Multiple bento boards
+- Pomodoro integration
+- Theme customizations
+
+---
+
+### 📸 Screenshots
+
+![Screenshot 2025-06-30 212458](https://github.com/user-attachments/assets/38a4c5bc-2d89-4af3-b978-d23fee2e9407)
+
+![Screenshot 2025-06-30 212536](https://github.com/user-attachments/assets/3a18f585-4968-4a60-bdc4-7c2ced3c0f07)
+
+![Screenshot 2025-06-30 212609](https://github.com/user-attachments/assets/814b8f50-bf47-45f9-863e-ff47be2c6f0c)
+
+
+---
+
+### 📄 License
+
+MIT
